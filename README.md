@@ -232,6 +232,7 @@ Process dataset:
 ```bash
 python ./EMTD_dataset/preprocess.py
 ```
+Make sure to check out the [discussions](https://github.com/antgroup/echomimic_v2/discussions) to learn how to start the inference.
 
 ## 📝 Release Plans
 
