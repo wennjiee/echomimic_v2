@@ -268,8 +268,7 @@ If you find our work useful for your research, please consider citing the paper 
   author={Rang Meng, Xingyu Zhang, Yuming Li, Chenguang Ma},
   year={2024},
   eprint={2411.10061},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+  archivePrefix={arXiv}
 }
 ```
 
