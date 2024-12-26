@@ -263,7 +263,7 @@ If we missed any open-source projects or related articles, we would like to comp
 If you find our work useful for your research, please consider citing the paper :
 
 ```
-@misc{meng2024echomimic,
+@misc{meng2024echomimicv2,
   title={EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation},
   author={Rang Meng, Xingyu Zhang, Yuming Li, Chenguang Ma},
   year={2024},
