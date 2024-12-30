@@ -1,0 +1,6 @@
+pretrained_weights/
+outputs/
+.vscode/
+*.pyc
+.ipynb_checkpoints/
+note.txt
