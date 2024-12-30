@@ -31,7 +31,7 @@ def download_youtube_video(video_url, output_path):
         print(f"error: {e}")
 
 if __name__ == '__main__':
-    df = pd.read_csv("./echomimicv2_benchmark_url+start_timecode+end_timecode.txt")
+    df = pd.read_csv("./EMTD_dataset/echomimicv2_benchmark_url+start_timecode+end_timecode.txt")
     save_dir = "ori_video_dir"
     urls = list(set(df['URL']))
     video_output_paths = [os.path.join(save_dir, url.split('v=')[1]+".mp4") for url in urls]
