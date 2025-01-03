@@ -186,7 +186,7 @@ export FFMPEG_PATH=/path/to/ffmpeg-4.4-amd64-static
 
 ```shell
 git lfs install
-git clone https://huggingface.co/BadToBest/EchoMimicV2 pretrained_weights
+git clone https://modelscope.cn/models/BadToBest/EchoMimicV2 pretrained_weights
 ```
 
 The **pretrained_weights** is organized as follows.
