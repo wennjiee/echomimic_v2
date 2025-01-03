@@ -220,7 +220,7 @@ Run the python inference script:
 python infer.py --config='./configs/prompts/infer.yaml'
 ```
 
-Run the python inference script for accelerated version:
+Run the python inference script for accelerated version. Make sure to check out the configuration for accelerated inference:
 ```bash
 python infer_acc.py --config='./configs/prompts/infer_acc.yaml'
 ```
