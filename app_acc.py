@@ -39,6 +39,12 @@ elif ffmpeg_path not in os.getenv('PATH'):
     print("add ffmpeg to path")
     os.environ["PATH"] = f"{ffmpeg_path}:{os.environ['PATH']}"
 
+width, height = 768, 768
+sample_rate = 16000
+cfg = 1.
+fps = 24
+context_frames = 12
+context_overlap = 3
 
 def generate(image_input, 
             audio_input, 
@@ -277,12 +283,6 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             label="预设人物及音频",
         )
 
-    width, height = 768, 768
-    sample_rate = 16000
-    cfg = 1.
-    fps = 24
-    context_frames = 12
-    context_overlap = 3
     generate_button.click(
         generate,
         inputs=[image_input, audio_input, pose_input, width, height, length, steps, sample_rate, cfg, fps, context_frames, context_overlap, quantization_input, seed],
