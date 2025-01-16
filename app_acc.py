@@ -250,13 +250,10 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                     audio_input = gr.Audio(label="音频输入", type="filepath")
                     pose_input = gr.Textbox(label="姿态输入（目录地址）", placeholder="请输入姿态数据的目录地址", value="assets/halfbody_demo/pose/fight")
                 with gr.Group():
-                    with gr.Row():
-                        length = gr.Number(label="视频长度，推荐120）", value=120)
-                    with gr.Row():
-                        steps = gr.Number(label="步骤（默认6）", value=6)
-                    with gr.Row():
-                        quantization_input = gr.Checkbox(label="int8量化（推荐显存12G的用户开启，并使用不超过5秒的音频）", value=False)
-                        seed = gr.Number(label="种子(-1为随机)", value=-1)
+                    length = gr.Number(label="视频长度，推荐120）", value=120)
+                    steps = gr.Number(label="步骤（默认6）", value=6)
+                    quantization_input = gr.Checkbox(label="int8量化（推荐显存12G的用户开启，并使用不超过5秒的音频）", value=False)
+                    seed = gr.Number(label="种子(-1为随机)", value=-1)
                 generate_button = gr.Button("🎬 生成视频")
             with gr.Column():
                 video_output = gr.Video(label="输出视频")
