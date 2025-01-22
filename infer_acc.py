@@ -92,6 +92,7 @@ def main():
     ## reference net init
     reference_unet = UNet2DConditionModel.from_pretrained(
         config.pretrained_base_model_path,
+        use_safetensors=False,
         subfolder="unet",
     ).to(dtype=weight_dtype, device=device)
     reference_unet.load_state_dict(
